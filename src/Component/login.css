@@ -1,0 +1,100 @@
+
+.outside {
+    position: absolute; /* 또는 absolute, 전체 화면을 채우기 위해 */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f4f4f4; /* 배경색 지정 */
+}
+
+
+.signholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 150px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    /* Optional: Adds a shadow for better visibility */
+    background: white;
+    /* Optional: sets a background color for the signholder */
+    border-radius: 10px;
+    /* Optional: rounds the corners */
+}
+
+.signupbox {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* Adjust width as needed */
+}
+
+.signInput {
+
+    padding: 10px 15px;
+    /* Adds padding for aesthetics */
+    margin-bottom: 20px;
+    /* Adds a bottom margin for spacing */
+    border: 0.1px solid #ccc ;
+    border-radius: 4px;
+
+
+    /* Rounds the corners of inputs and buttons */
+}
+
+
+
+.buttonContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    margin-top: 10%;
+    /* This will place a bit of space between the two buttons */
+}
+
+.signBtn {
+    margin-top: 10px; /* Adjust this value as needed */
+}
+
+
+.loginBtn,
+.signBtn {
+    padding: 7px 15px;
+    /* Adjust padding to control the height and width */
+    flex: 2;
+    /* Makes both buttons take up equal space in the container */
+    border: grey;
+    margin-right: 5px;
+    /* Right margin for the left button only */
+    border-radius: 4px;
+    size-adjust: 50%;
+}
+
+
+
+
+.loginBtn:hover {
+    background-color: #00a49192;
+}
+
+.signBtn:hover {
+    background-color: #00a49192;
+}
+
+
+.signinTitle {
+    font-size: 30px ;
+    /* Adjust the size as needed */
+    margin-bottom: 30px;
+    /* Adds space below the title */
+    text-align: center;
+    /* Centers the text */
+    font-weight: 450;
+}
+
+

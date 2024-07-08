@@ -1,0 +1,380 @@
+.mainPage {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f4f4f4;
+}
+
+.left-side,
+.right-side {
+  flex: 1;
+  /* flex 아이템들이 동일한 비율로 공간 차지 */
+  height: 100vh;
+  /* 전체 화면 높이 */
+  overflow: auto;
+  /* 내용이 많을 경우 스크롤 가능하도록 설정 */
+}
+
+
+.right-side {
+  background-color: #ffffff;
+  /* 필요한 추가 스타일링 */
+}
+
+.leftTopTab {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 30px;
+  background-color: #D9D9D9;
+  padding: 8px;
+
+}
+
+
+.leftTopTab button {
+  padding: 10px 15px;
+  /* Adjust padding to control the height and width */
+  flex: 1;
+  /* Makes both buttons take up equal space in the container */
+  border: grey;
+  margin-right: 5px;
+  /* Right margin for the left button only */
+  border-radius: 10px;
+}
+
+.leftTopTab button:hover {
+
+  background-color: #5c5f5c;
+  cursor: pointer;
+
+}
+
+.rightTopTab {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: 30px;
+  background-color: #D9D9D9;
+  padding: 8px;
+
+}
+
+
+.rightTopTab button:hover {
+
+  background-color: #5c5f5c;
+  cursor: pointer;
+
+}
+
+
+.rightTopTab button {
+  padding: 10px 15px;
+  /* Adjust padding to control the height and width */
+  flex: 1;
+  /* Makes both buttons take up equal space in the container */
+  border: grey;
+  margin-right: 5px;
+  /* Right margin for the left button only */
+  border-radius: 10px;
+}
+
+
+
+
+
+.tabcontent {
+  display: none;
+  transition: filter 0.3s ease;
+
+
+  /* This hides all tab content by default */
+}
+
+.tabcontent.active {
+  display: block;
+  
+  /* This will show the tab content when 'active' class is added */
+}
+
+.tabcontent.blur {
+  display: block;
+  filter: blur(5px); /* 블러 처리 */
+}
+
+
+
+
+.fixInput {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 8%;
+  /* This will vertically center align items */
+}
+
+.profilePic {
+  width: 150px; /* 원하는 너비 */
+  height: 150px; /* 원하는 높이 */
+  overflow: hidden; /* 넘치는 부분을 숨김 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%; /* 원형으로 만들기 */
+  border: 0.01px solid #ddd; /* 테두리 추가 */
+}
+
+/* 이미지 스타일 */
+.profilePic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 이미지가 고정된 크기를 벗어나지 않도록 함 */
+  border-radius: 50%; /* 원형으로 만들기 */
+}
+
+
+.profilePic img:hover {
+  cursor: pointer;
+  background-color: #ffffff;
+}
+
+.nameTitle {
+  text-align: left;
+  margin-left: 5%;
+  /* Aligns the title and input in a column */
+}
+
+.nameInput {
+  /* Your styles for name input here */
+  text-align: left;
+
+  border: 0.5px solid #f4f4f4;
+  padding: 12px;
+  border-radius: 10px;
+  width: 93%;
+  /* Adds a little space between the title and the input */
+}
+
+.instructionName {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  text-align: left;
+  margin-left: 5%;
+
+
+  /* This is the correct property to align text to the left */
+
+}
+
+.instructionInput {
+  text-align: left;
+  /* Aligns text to the left */
+  background-color: white;
+  border: 0.5px solid #f4f4f4;
+  border-radius: 10px;
+  width: 96%;
+  height: 350px;
+  padding: 12px;
+  /* Adjust padding as needed */
+  resize: none;
+  /* Prevents resizing the textarea */
+  overflow: auto;
+  /* Adds a scrollbar if the text overflows */
+  line-height: normal;
+  /* Adjusts the spacing between lines */
+  box-sizing: border-box;
+  /* Includes padding and border in the width and height */
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 0; 
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.bottom {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 4%;
+  margin-top: 10px;
+}
+
+.saveBtn {
+  background-color: #6e6d6d;
+  padding: 5px 20px;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+
+.saveBtn:hover {
+  background-color: #444444;
+}
+
+
+
+
+
+
+.secretInput {
+  text-align: left;
+  /* Aligns text to the left */
+  background-color: white;
+  border: 0.5px solid #f4f4f4;
+  border-radius: 10px;
+  width: 96%;
+  height: 650px;
+  padding: 12px;
+  /* Adjust padding as needed */
+  resize: none;
+  /* Prevents resizing the textarea */
+  overflow: auto;
+  /* Adds a scrollbar if the text overflows */
+  line-height: normal;
+  /* Adjusts the spacing between lines */
+  box-sizing: border-box;
+  /* Includes padding and border in the width and height */
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 0; 
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.secretName {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  text-align: left;
+  margin-left: 5%;
+  margin-top: 2.5%;
+}
+
+
+.goalpage {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  text-align: left;
+  margin-left: 5%;
+  margin-top: 2.5%;
+}
+
+.tablinks {
+  opacity: 40%;
+}
+
+.tablinks.active {
+  opacity: 100%;
+}
+
+.goalInput {
+  /* Your styles for name input here */
+  text-align: left;
+
+  border: 0.5px solid #f4f4f4;
+  padding: 12px;
+  border-radius: 10px;
+  margin-top: 2%;
+  width: 93%;
+  /* Adds a little space between the title and the input */
+}
+
+.Logout {
+  background-color: #6e6d6d;
+  color: white;
+  cursor: pointer;
+}
+
+.Logout:hover {
+  background-color: #444444;
+}
+
+.saveimgBut {
+  background-color: #6e6d6d;
+  padding: 5px 20px;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  margin-top: 10px;
+
+}
+
+.saveimgBut:hover {
+  background-color: #444444;
+}
+
+
+/* Upload and Extract PDF Text Section */
+section {
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  
+}
+
+/* Section title */
+section h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Form styling */
+section form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+section form input[type="file"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+section form button {
+  padding: 10px 20px;
+  background-color: #6e6d6d;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+section form button:hover {
+  background-color: #444444;
+}
+
+/* PDF Text display */
+section > div {
+  margin-top: 20px;
+}
+
+section > div h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+section > div p {
+  padding: 10px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  white-space: pre-wrap; /* Preserve line breaks */
+}
+
+/* PDF Preview styling */
+section iframe {
+  margin-top: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
